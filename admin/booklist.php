@@ -171,13 +171,13 @@ include('header.php');
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Bind change and input listeners
+          
             document.getElementById('searchInput').addEventListener('input', filterAppointments);
             document.getElementById('timeSlotSelect').addEventListener('change', filterAppointments);
             document.getElementById('fromDateInput').addEventListener('change', filterAppointments);
             document.getElementById('toDateInput').addEventListener('change', filterAppointments);
 
-            // Load time slots
+          
             fetch('get_time_slots.php')
                 .then(response => response.json())
                 .then(timeSlots => {

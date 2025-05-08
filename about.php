@@ -1973,79 +1973,76 @@
         </div>
         <form method="POST" action="book_appointment.php" class="bookForm">
           <div class="modal-body">
-
-            <div class="mb-1">
-              <label for="recipient-name" class="col-form-label">Full Name</label>
-              <input type="text" name="name" class="form-control" id="name" placeholder="Enter Full Name">
+            <div class="row">
+              <div class="mb-1 col-lg-12">
+                <label for="recipient-name" class="col-form-label">Full Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Enter Full Name">
+              </div>
             </div>
-            <div class="mb-1">
-              <label for="recipient-name" class="col-form-label">Phone Number</label>
-              <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Phone Number"
-                pattern="\d{10}" maxlength="10" minlength="10" required title="Please enter exactly 10 digits">
-
-
+            <div class="row">
+              <div class="mb-1 col-lg-6">
+                <label for="recipient-name" class="col-form-label">Phone Number</label>
+                <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Phone Number"
+                  pattern="\d{10}" maxlength="10" minlength="10" required title="Please enter exactly 10 digits">
+              </div>
+              <div class="mb-1 col-lg-6">
+                <label for="recipient-name" class="col-form-label">City</label>
+                <input type="text" name="city_name" class="form-control" id="city_name" placeholder="Enter Your City">
+              </div>
             </div>
-            <div class="mb-1">
-              <label for="disease" class="col-form-label">Select Disease</label>
-              <select class="form-control" id="disease" name="disease">
-                <option value="" disabled selected>-- Select a Disease --</option>
-                <option value="Premature Ejaculation">Premature Ejaculation</option>
-                <option value="Erectile Dysfunction">Erectile Dysfunction</option>
-                <option value="Nightfall">Nightfall</option>
-                <option value="Low Libido">Low Libido</option>
-                <option value="Delayed Ejaculation">Delayed Ejaculation</option>
-                <option value="Penis Enlargement">Penis Enlargement</option>
-                <option value="Low Sperm Count">Low Sperm Count</option>
-                <option value="Diabetes">Diabetes</option>
-                <option value="Anxiety & Stress">Anxiety & Stress</option>
-                <option value="Piles Treatment">Piles Treatment</option>
-                <option value="Phimosis Treatment">Phimosis Treatment</option>
-                <option value="Hair Fall Treatment">Hair Fall Treatment</option>
-              </select>
+            <div class="row">
+              <div class="mb-1 col-lg-6">
+                <label for="disease" class="col-form-label">Select Disease</label>
+                <select class="form-control" id="disease" name="disease">
+                  <option value="" disabled selected>-- Select a Disease --</option>
+                  <option value="Premature Ejaculation">Premature Ejaculation</option>
+                  <option value="Erectile Dysfunction">Erectile Dysfunction</option>
+                  <option value="Nightfall">Nightfall</option>
+                  <option value="Low Libido">Low Libido</option>
+                  <option value="Delayed Ejaculation">Delayed Ejaculation</option>
+                  <option value="Penis Enlargement">Penis Enlargement</option>
+                  <option value="Low Sperm Count">Low Sperm Count</option>
+                  <option value="Diabetes">Diabetes</option>
+                  <option value="Anxiety & Stress">Anxiety & Stress</option>
+                  <option value="Piles Treatment">Piles Treatment</option>
+                  <option value="Phimosis Treatment">Phimosis Treatment</option>
+                  <option value="Hair Fall Treatment">Hair Fall Treatment</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="mb-1 col-lg-6">
+                <label for="recipient-name" class="col-form-label">Problem</label>
+                <input type="text" name="problem" class="form-control" id="problem" placeholder="Enter Your Problem">
+              </div>
             </div>
-            <div class="mb-1">
-              <label for="recipient-name" class="col-form-label">Problem</label>
-              <input type="text" name="problem" class="form-control" id="problem" placeholder="Enter Your Problem">
+            <div class="row">
+              <div class="col-lg-6 mb-1">
+                <label class="col-form-label">Appointment Date</label>
+                <input type="date" class="cs_form_field form-control" id="appointment_date" name="appointment_date"
+                  placeholder="Select Date">
+              </div>
+              <div class="col-lg-6 mb-1">
+                <label class="col-form-label">Appointment Time</label>
+                <select class="cs_form_field form-control" name="appointment_time" id="appointment_time">
+                  <option value="" disabled selected>Select Time</option>
+                  <option value="09:00 AM-10:00 AM">09:00 AM - 10:00 AM</option>
+                  <option value="10:00 AM-11:00 AM">10:00 AM - 11:00 AM</option>
+                  <option value="11:00 AM-12:00 PM">11:00 AM - 12:00 PM</option>
+                  <option value="12:00 PM-01:00 PM">12:00 PM - 01:00 PM</option>
+                  <option value="02:00 PM-03:00 PM">02:00 PM - 03:00 PM</option>
+                  <option value="03:00 PM-04:00 PM">03:00 PM - 04:00 PM</option>
+                  <option value="04:00 PM-05:00 PM">04:00 PM - 05:00 PM</option>
+                  <option value="05:00 PM-06:00 PM">05:00 PM - 06:00 PM</option>
+                </select>
+              </div>
             </div>
 
-            <div class="mb-1">
-              <label for="recipient-name" class="col-form-label">City</label>
-              <input type="text" name="city_name" class="form-control" id="city_name" placeholder="Enter Your City">
-            </div>
-
-
-            <div class="col-lg-12 mb-1">
-              <label class="col-form-label">Appointment Date</label>
-
-
-              <input type="date" class="cs_form_field form-control" id="appointment_date" name="appointment_date"
-                placeholder="Select Date">
-            </div>
-
-            <div class="col-lg-12 mb-1">
-              <label class="col-form-label">Appointment Time</label>
-
-              <select class="cs_form_field form-control" name="appointment_time" id="appointment_time">
-                <option value="" disabled selected>Select Time</option>
-                <option value="09:00 AM-10:00 AM">09:00 AM - 10:00 AM</option>
-                <option value="10:00 AM-11:00 AM">10:00 AM - 11:00 AM</option>
-                <option value="11:00 AM-12:00 PM">11:00 AM - 12:00 PM</option>
-                <option value="12:00 PM-01:00 PM">12:00 PM - 01:00 PM</option>
-                <option value="02:00 PM-03:00 PM">02:00 PM - 03:00 PM</option>
-                <option value="03:00 PM-04:00 PM">03:00 PM - 04:00 PM</option>
-                <option value="04:00 PM-05:00 PM">04:00 PM - 05:00 PM</option>
-                <option value="05:00 PM-06:00 PM">05:00 PM - 06:00 PM</option>
-              </select>
-            </div>
             <div class="mb-1">
               <label for="consultation-fee" class="col-form-label">Consultation Fees (₹)</label>
               <input type="text" name="fees" class="form-control" id="consultation_fee" value="99" readonly>
-
             </div>
-
           </div>
           <div class="modal-footer" style="justify-content:center;">
-
             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
@@ -2104,8 +2101,8 @@
 
               Swal.fire({
                 icon: 'success',
-                title: 'Thank you!',
-                text: 'Your appointment has been successfully booked. We look forward to seeing you at the scheduled time. If you need to have any questions, feel free to contact us.',
+                title: 'Thank You for Booking!',
+                text: "We’ve received your request and will contact you shortly to confirm the details. We look forward to assisting you!",
               }).then(function () {
 
                 $('.bookForm')[0]
@@ -2116,7 +2113,7 @@
               Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Please fill All Fields.',
+                text: 'Please fill in all Fields.',
               });
             }
           },
@@ -2125,7 +2122,7 @@
             Swal.fire({
               icon: 'error',
               title: 'Oops...',
-              text: 'Please fill All Fields.',
+              text: 'Something went wrong. Please try again later.',
             });
           }
         });
